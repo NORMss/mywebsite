@@ -32,6 +32,7 @@ kotlin {
     sourceSets {
 
         commonMain.dependencies {
+            implementation(libs.material.icons.extended)
             implementation(libs.coil)
 
             implementation(compose.runtime)
