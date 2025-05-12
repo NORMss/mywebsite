@@ -3,7 +3,10 @@ package ru.normno.mywebsite.presentation.home
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.Message
+import androidx.compose.material.icons.filled.BrowseGallery
+import androidx.compose.material.icons.filled.Code
 import androidx.compose.material.icons.filled.Message
+import androidx.compose.material.icons.filled.Sports
 import androidx.compose.material.icons.filled.Videocam
 import androidx.compose.material3.AssistChip
 import androidx.compose.material3.Icon
@@ -78,7 +81,7 @@ fun HomeScreen() {
                 },
                 label = {
                     Text(
-                        text = "YouTube"
+                        text = "Telegram"
                     )
                 },
                 leadingIcon = {
@@ -90,21 +93,52 @@ fun HomeScreen() {
             )
             AssistChip(
                 onClick = {
-                    uriHandler.openUri("https://www.youtube.com/@normno")
+                    uriHandler.openUri("https://www.strava.com/athletes/66466431")
                 },
                 label = {
                     Text(
-                        text = "YouTube"
+                        text = "Strava"
                     )
                 },
                 leadingIcon = {
                     Icon(
-                        imageVector = Icons.Default.Videocam,
+                        imageVector = Icons.Default.Sports,
                         contentDescription = null,
                     )
                 }
             )
-
+            AssistChip(
+                onClick = {
+                    uriHandler.openUri("https://github.com/NORMss")
+                },
+                label = {
+                    Text(
+                        text = "Strava"
+                    )
+                },
+                leadingIcon = {
+                    Icon(
+                        imageVector = Icons.Default.Code,
+                        contentDescription = null,
+                    )
+                }
+            )
+            AssistChip(
+                onClick = {
+                    uriHandler.openUri("https://www.instagram.com/norm_no_/")
+                },
+                label = {
+                    Text(
+                        text = "Instagram"
+                    )
+                },
+                leadingIcon = {
+                    Icon(
+                        imageVector = Icons.Default.BrowseGallery,
+                        contentDescription = null,
+                    )
+                }
+            )
         }
     }
 }
