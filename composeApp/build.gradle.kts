@@ -13,7 +13,7 @@ kotlin {
     wasmJs {
         moduleName = "composeApp"
         browser {
-            val rootDirPath = project.rootDir.path
+            val rootDirPath = "192.168.31.202"
             val projectDirPath = project.projectDir.path
             commonWebpackConfig {
                 outputFileName = "composeApp.js"
